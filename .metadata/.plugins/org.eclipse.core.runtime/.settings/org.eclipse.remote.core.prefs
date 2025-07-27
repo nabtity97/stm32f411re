@@ -1,0 +1,11 @@
+connections/org.eclipse.remote.serial.core.connectionType/hesham%27s+nucleo+board/serial.baudRate=11
+connections/org.eclipse.remote.serial.core.connectionType/hesham%27s+nucleo+board/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/hesham%27s+nucleo+board/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/hesham%27s+nucleo+board/serial.portName=COM6
+connections/org.eclipse.remote.serial.core.connectionType/hesham%27s+nucleo+board/serial.stopBits=0
+connections/org.eclipse.remote.serial.core.connectionType/my+testing+board/serial.baudRate=11
+connections/org.eclipse.remote.serial.core.connectionType/my+testing+board/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/my+testing+board/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/my+testing+board/serial.portName=COM7
+connections/org.eclipse.remote.serial.core.connectionType/my+testing+board/serial.stopBits=0
+eclipse.preferences.version=1

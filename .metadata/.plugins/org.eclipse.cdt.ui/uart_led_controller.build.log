@@ -1,0 +1,10 @@
+18:11:32 **** Incremental Build of configuration Debug for project uart_led_controller ****
+make -j20 all 
+arm-none-eabi-size  uart_led_controller.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8788	    140	   1644	  10572	   294c	uart_led_controller.elf
+Finished building: default.size.stdout
+ 
+
+18:11:32 Build Finished. 0 errors, 0 warnings. (took 234ms)
+
