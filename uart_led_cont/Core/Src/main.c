@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -71,7 +71,11 @@ static void MX_USART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int __io_putchar(int ch)
+{
+	HAL_UART_Transmit(&huart1, (uint8_t*)&ch, 1, 10);
+	return ch;
+}
 /* USER CODE END 0 */
 
 /**
@@ -106,6 +110,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  printf("Welcome to the program\r\n");
   HAL_UART_Transmit(&huart1, (uint8_t*)msg, sizeof(msg) - 1, HAL_MAX_DELAY); // send the welcome message and ask the user to send a command
   HAL_UART_Receive_IT(&huart1, received_msg, sizeof(received_msg));
   /* USER CODE END 2 */
@@ -115,8 +120,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-//	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-//	HAL_Delay(1000);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
